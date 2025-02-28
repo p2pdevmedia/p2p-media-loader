@@ -54,9 +54,8 @@ export class Core<TStream extends Stream = Stream> {
     p2pErrorRetries: 3,
     trackerClientVersionPrefix: TRACKER_CLIENT_VERSION_PREFIX,
     announceTrackers: [
-      "wss://tracker.novage.com.ua",
-      "wss://tracker.webtorrent.dev",
-      "wss://tracker.openwebtorrent.com",
+      "wss://vimm.swarm.video",
+
     ],
     rtcConfig: {
       iceServers: [

@@ -57,7 +57,7 @@ test("override common config", () => {
     p2pErrorRetries: 3,
     trackerClientVersionPrefix: "PM1000",
     announceTrackers: [
-      "wss://tracker.webtorrent.dev",
+      "wss://vimm.swarm.video",
       "wss://tracker.files.fm:7073/announce",
       "wss://tracker.openwebtorrent.com",
       // "wss://tracker.novage.com.ua",
