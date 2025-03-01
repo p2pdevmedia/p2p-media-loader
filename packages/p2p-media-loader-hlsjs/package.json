@@ -51,7 +51,7 @@
     "type-check": "npx tsc --noEmit"
   },
   "dependencies": {
-    "p2p-media-loader-core": "workspace:*"
+    "p2p-media-loader-core": "../p2p-media-loader-core"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",

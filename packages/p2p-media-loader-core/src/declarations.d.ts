@@ -5,6 +5,7 @@ declare module "bittorrent-tracker" {
     constructor(options: {
       infoHash: Uint8Array;
       peerId: Uint8Array;
+      stats: object;
       announce: string[];
       rtcConfig?: RTCConfiguration;
       getAnnounceOpts?: () => object;
@@ -16,6 +17,8 @@ declare module "bittorrent-tracker" {
     ): void;
 
     start(): void;
+
+    stats(): void;
 
     complete(): void;
 

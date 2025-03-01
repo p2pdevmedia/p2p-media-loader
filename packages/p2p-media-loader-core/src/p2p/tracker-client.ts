@@ -63,6 +63,7 @@ export class P2PTrackerClient {
     this.client = new TrackerClient({
       infoHash: utf8ToUintArray(streamHash),
       peerId: utf8ToUintArray(peerId),
+      stats:{'some':"stats"},
       announce: isSafariOrWkWebview()
         ? config.announceTrackers.slice(0, 1) // Safari has issues with multiple trackers
         : config.announceTrackers,
@@ -77,10 +78,15 @@ export class P2PTrackerClient {
   }
 
   start() {
+    console.log('start??')
     this.client.start();
   }
 
+  stats() {
+    this.client.stats();
+  }
   destroy() {
+    console.log('destroy??')
     this.client.destroy();
     for (const { peer, potentialConnections } of this._peers.values()) {
       peer?.destroy();
